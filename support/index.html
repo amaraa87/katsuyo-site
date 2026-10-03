@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Support · Katsuyō</title>
+  <meta name="description" content="Help for the Katsuyō iOS app: spaced repetition, furigana and romaji, the AI coach, resetting progress, offline use, requirements, and content licenses.">
+  <meta name="color-scheme" content="light dark">
+  <link rel="canonical" href="https://amaraa87.github.io/katsuyo-site/support/">
+  <link rel="stylesheet" href="../assets/style.css">
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' rx='22' fill='%23F05A28'/><text x='50' y='71' font-size='62' text-anchor='middle' fill='white' font-family='sans-serif'>%E6%B4%BB</text></svg>">
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+  <div class="wrap">
+
+    <header class="site-header">
+      <a class="wordmark" href="../"><span class="hanko" aria-hidden="true" lang="ja">活</span>Katsuyō</a>
+      <nav class="site-nav" aria-label="Site">
+        <a href="../">Home</a>
+        <a href="./" aria-current="page">Support</a>
+        <a href="../privacy/">Privacy</a>
+      </nav>
+    </header>
+
+    <main id="main" class="doc">
+      <h1>Support</h1>
+      <p class="updated">Common questions are below. If yours isn't answered, email us.</p>
+
+      <h2>Frequently asked questions</h2>
+
+      <details>
+        <summary>How does the review schedule (SRS) work?</summary>
+        <p>Katsuyō uses FSRS, a spaced-repetition algorithm. Every verb form you learn becomes its own review card (for example, <span lang="ja">書く</span> in the て form). After each answer, the app estimates how long you will remember that card and schedules the next review for just before you would forget it.</p>
+        <ul>
+          <li>A fast, correct answer pushes the card far into the future.</li>
+          <li>A slow, correct answer brings it back a little sooner.</li>
+          <li>A wrong answer brings it back soon.</li>
+        </ul>
+        <p>Getting one form of a verb right also gives a little credit to the other forms of the same verb. Cards that are due appear in the Review tab, and reviews are played through the same drill games as lessons.</p>
+      </details>
+
+      <details>
+        <summary>What do the furigana and romaji switches do?</summary>
+        <p>Both are in Settings under Script display, and each can be on or off independently.</p>
+        <ul>
+          <li><b>Furigana</b> shows small kana above kanji, so you can read words like <ruby lang="ja">書<rt>か</rt></ruby><span lang="ja">く</span> before you know the kanji.</li>
+          <li><b>Romaji</b> shows the reading in Latin letters (<i>kaku</i>).</li>
+        </ul>
+        <p>They only change what is displayed. Answers are always chosen in kana, so turning them off is a good way to check your reading as you progress.</p>
+      </details>
+
+      <details>
+        <summary>Why does the AI coach ask for permission?</summary>
+        <p>Everything else in the app runs on your iPhone. The AI coach is the only feature that sends data off the device: it sends the drill details of a mistake (or weekly practice statistics) to our server, which uses Anthropic's Claude to write the reply. We ask first so you can decide. No name, account, contacts or location are ever sent. If you say no, or turn the coach off later, the app keeps working with its built-in explanations. Details are in the <a href="../privacy/">privacy policy</a>.</p>
+      </details>
+
+      <details>
+        <summary>How do I reset my progress?</summary>
+        <p>Your progress is stored only on your iPhone, so deleting the app erases it. Delete Katsuyō from your Home Screen, then reinstall it from the App Store to start fresh. If you later restore your iPhone from a backup made before that, the old progress can come back with it.</p>
+      </details>
+
+      <details>
+        <summary>Does it work offline?</summary>
+        <p>Yes. Lessons, all six drill games, reviews, streaks and audio work without an internet connection. Only the AI coach needs a connection. While you are offline, “Why?” shows the app's built-in explanation instead.</p>
+      </details>
+
+      <details>
+        <summary>Which devices are supported?</summary>
+        <p>Katsuyō is an iPhone app and needs iOS 17 or later.</p>
+      </details>
+
+      <details>
+        <summary>I can't hear any audio.</summary>
+        <p>Katsuyō speaks Japanese with your iPhone's built-in voice. Check that the ringer is not on silent and the volume is up. If the voice sounds wrong or is missing, open iOS Settings → Accessibility → Spoken Content → Voices → Japanese and download a voice.</p>
+      </details>
+
+      <details>
+        <summary>Does it cost anything?</summary>
+        <p>No. Katsuyō is free, with no ads, no in-app purchases and no account.</p>
+      </details>
+
+      <div class="contact">
+        <h2>Contact</h2>
+        <p>Email <a href="mailto:amarsanaa@outlook.com">amarsanaa@outlook.com</a>. Please include your iPhone model, your iOS version and the app version (shown at the bottom of Settings).</p>
+      </div>
+
+      <h2 id="licenses">Content licenses</h2>
+      <p>Katsuyō's verb data comes from open dictionary projects. We are grateful to their authors.</p>
+      <ul>
+        <li><b>JMdict</b>: verb readings and English meanings are derived from the JMdict dictionary files, the property of the <a href="https://www.edrdg.org/">Electronic Dictionary Research and Development Group</a> (EDRDG). They are used under the EDRDG licence, <a href="https://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0</a>. See the <a href="https://www.edrdg.org/edrdg/licence.html">EDRDG licence statement</a>.</li>
+        <li><b>JmdictFurigana</b>: furigana alignment is based on the <a href="https://github.com/Doublevil/JmdictFurigana">JmdictFurigana</a> project, licensed under <a href="https://creativecommons.org/licenses/by-sa/4.0/">CC BY-SA 4.0</a>.</li>
+        <li><b>JLPT levels</b>: JLPT level tags are unofficial and based on community-compiled vocabulary lists. JLPT is not affiliated with this app.</li>
+      </ul>
+      <p>Example sentences in the current version are written for the app. The same credits are shown in the app under Settings → Licenses &amp; data sources.</p>
+    </main>
+
+    <footer class="site-footer">
+      <span>© 2026 Amarsanaa Jargal</span>
+      <nav aria-label="Footer">
+        <a href="../">Home</a>
+        <a href="../privacy/">Privacy policy</a>
+      </nav>
+    </footer>
+
+  </div>
+</body>
+</html>
