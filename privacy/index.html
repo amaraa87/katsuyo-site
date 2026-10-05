@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Privacy Policy · Katsuyō</title>
-  <meta name="description" content="Privacy policy for the Katsuyō iOS app: progress stays on your iPhone, there is no account, and the optional AI coach sends only answer and practice data after you turn it on.">
+  <meta name="description" content="Privacy policy for the Katsuyō iOS app: it collects no data, makes no network requests, and keeps all progress on your iPhone.">
   <meta name="color-scheme" content="light dark">
   <link rel="canonical" href="https://amaraa87.github.io/katsuyo-site/privacy/">
   <link rel="stylesheet" href="../assets/style.css">
@@ -25,9 +25,9 @@
 
     <main id="main" class="doc">
       <h1>Privacy Policy</h1>
-      <p class="updated">Effective 3 October 2026</p>
+      <p class="updated">Effective 5 October 2026</p>
 
-      <p class="lede"><b>The short version:</b> Katsuyō has no account, no ads, no analytics and no tracking. Your progress stays on your iPhone. The optional AI coach is off until you agree to turn it on. When it is on, it sends only the verb drill details and practice statistics described below, plus a random app ID used for rate limiting. It never sends your name, email, contacts, location or anything you write.</p>
+      <p class="lede"><b>The short version:</b> Katsuyō collects no data. It has no account, no ads, no analytics and no tracking, and it never connects to the internet. Everything you do stays on your iPhone.</p>
 
       <p>This policy covers the iOS app <b>Katsuyō: Japanese Verbs</b> (“the app”) and this website. The app is made and operated by Amarsanaa Jargal, an individual developer (“we”, “us”). Contact: <a href="mailto:amarsanaa@outlook.com">amarsanaa@outlook.com</a>.</p>
 
@@ -36,79 +36,35 @@
       <ul>
         <li>your learning progress, unit progress and mastery;</li>
         <li>your review schedule and the record of your answers and mistakes;</li>
-        <li>your settings (furigana, romaji, audio, level, daily goal, AI coach on or off);</li>
+        <li>your settings (furigana, romaji, audio, level, daily goal);</li>
         <li>your streaks, XP and daily practice minutes;</li>
-        <li>saved AI coach explanations and any study plan you accepted.</li>
+        <li>your weekly study plan.</li>
       </ul>
-      <p>There is no account and no sign-in. We do not run a server that stores your progress, so we cannot see it. Japanese audio is spoken by your iPhone's built-in text-to-speech voice, on the device. If you back up your iPhone with iCloud or to a computer, Apple's backup can include the app's data. That backup is handled by Apple under your Apple account, not by us.</p>
+      <p>There is no account and no sign-in. We do not run a server, so we cannot see your progress. The “Why?” explanations and the weekly plan are produced by the app itself, on your iPhone. Japanese audio is spoken by your iPhone's built-in text-to-speech voice, on the device. If you back up your iPhone with iCloud or to a computer, Apple's backup can include the app's data. That backup is handled by Apple under your Apple account, not by us.</p>
 
-      <h2>2. The AI coach is off until you turn it on</h2>
-      <p>The app works fully without the AI coach. The coach is <b>off by default</b>. Before it sends anything, the app asks for your permission and explains what will be sent. You can turn it off at any time in Settings. When it is off, the app makes no requests to our server.</p>
+      <h2>2. The app makes no network requests</h2>
+      <p>The app contains no networking code that sends or receives your data. It does not contact our servers (we have none) or any third party. Links in Settings, such as this policy or the support page, open in Safari, outside the app.</p>
 
-      <h2>3. What the AI coach sends, and when</h2>
-      <p>When the coach is on, the app sends requests to our server, <code>katsuyo-api.zon.mn</code>. The app's connection is encrypted (HTTPS), and requests reach our server through Cloudflare's network. Only two kinds of request exist:</p>
-      <div class="table-wrap">
-        <table>
-          <thead><tr><th scope="col">Feature</th><th scope="col">When</th><th scope="col">What is sent</th></tr></thead>
-          <tbody>
-            <tr>
-              <td><b>“Why?” explanation</b></td>
-              <td>Only when you tap “Why?” after a wrong answer and no explanation for that mistake is already saved on your device.</td>
-              <td>The verb (with its kana reading and verb class), the target form, the correct answer, the answer you chose, and the type of error the app detected (for example, “used the ichidan rule on a godan verb”).</td>
-            </tr>
-            <tr>
-              <td><b>Weekly plan</b></td>
-              <td>At most about once a week, and when you ask the coach for a plan.</td>
-              <td>Aggregated practice statistics: counts of your mistakes by error type and by verb form, up to eight IDs of verbs you find difficult (from the app's own verb list), your 7-day review retention rate, and your minutes practised in the last 7 days.</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <p>Each request also carries an <b>anonymous app ID</b>: a random identifier created by the app. It is not derived from your device, your Apple account or anything about you. It is used only to limit how many requests one installation can make per day. You can reset it in Settings, which replaces it with a new random ID.</p>
-      <p>The app <b>never</b> sends your name, email address, contacts, location, photos, or any free text. The app has no text input at all; every answer is a tap, swipe or trace.</p>
-
-      <h2>4. Who processes the request</h2>
-      <ul>
-        <li><b>Our server</b> (<code>katsuyo-api.zon.mn</code>) checks the request, applies the rate limits, and forwards the content to Anthropic to generate the reply. It sends the reply back to the app. It does <b>not</b> store the content of requests or replies.</li>
-        <li><b>Anthropic</b> (the Claude API) generates the explanation or plan. Anthropic processes this data under its <a href="https://www.anthropic.com/legal/commercial-terms">Commercial Terms of Service</a> and <a href="https://www.anthropic.com/legal/privacy">Privacy Policy</a>. Under those terms, Anthropic does not use data sent through its API to train its models. Anthropic keeps API inputs and outputs for a limited time, generally up to 30 days, for trust and safety purposes. It may keep them longer where the law requires it or where content is flagged for violating its usage policies. Please read Anthropic's documents for the authoritative terms.</li>
-        <li><b>Cloudflare</b> routes and protects the traffic to our server. To deliver the request, Cloudflare processes your IP address and connection details in transit. See <a href="https://www.cloudflare.com/privacypolicy/">Cloudflare's Privacy Policy</a>.</li>
-      </ul>
-      <p>These providers may process data in countries other than yours, including the United States.</p>
-
-      <h2>5. What our server keeps</h2>
-      <p>Our server keeps only operational metadata, so that we can see whether the service is working:</p>
-      <ul>
-        <li>the time of the request;</li>
-        <li>the first few characters of the app ID (never the full ID);</li>
-        <li>which feature was called (explanation or plan);</li>
-        <li>the result status, the response time, and the number of AI tokens used.</li>
-      </ul>
-      <p>These log entries are rotated automatically by size, so older entries are overwritten. Rate-limit counters are kept only in the server's memory and are cleared every day and whenever the server restarts. The server never logs the verbs, answers, statistics or replies.</p>
-
-      <h2>6. No tracking, ads or sale of data</h2>
+      <h2>3. No tracking, ads or sale of data</h2>
       <p>The app contains no advertising, no analytics or tracking SDKs, and no third-party code that collects data. We do not track you across apps or websites, we do not build profiles, and we do not sell or share personal data. There are no in-app purchases.</p>
       <p>If you have chosen in iOS settings to share analytics with app developers, Apple may give us aggregated crash reports and usage statistics. Apple's privacy policy covers that sharing.</p>
 
-      <h2>7. Children</h2>
-      <p>The app is suitable for all ages. It does not ask for or collect personal information from anyone, including children. The AI coach sends no personal information, and a parent can simply leave it off.</p>
+      <h2>4. Children</h2>
+      <p>The app is suitable for all ages. It does not ask for or collect personal information from anyone, including children.</p>
 
-      <h2>8. Your choices</h2>
-      <ul>
-        <li><b>Stop all sending:</b> turn off the AI coach in Settings. The app then makes no requests to our server.</li>
-        <li><b>New app ID:</b> reset the app ID in Settings. Future requests can no longer be linked to earlier ones.</li>
-        <li><b>Delete everything on your device:</b> delete the app. This removes all progress and settings stored by the app (except copies in any iPhone backup you keep).</li>
-      </ul>
+      <h2>5. Deleting your data</h2>
+      <p>Delete the app. This removes all progress and settings stored by the app (except copies in any iPhone backup you keep).</p>
 
-      <h2>9. Data requests</h2>
-      <p>You can ask us about your data, or ask us to delete it, by emailing <a href="mailto:amarsanaa@outlook.com">amarsanaa@outlook.com</a>. We will reply within 30 days. Because we hold no account, no progress and no request content, and our logs contain only a short app-ID prefix, we usually have nothing that can be linked to you. For data held by Anthropic or Cloudflare, you can also contact them directly through the links above.</p>
+      <h2>6. Questions</h2>
+      <p>You can ask us about your data by emailing <a href="mailto:amarsanaa@outlook.com">amarsanaa@outlook.com</a>. We will reply within 30 days. Because the app sends us nothing, we hold no data about you.</p>
 
-      <h2>10. This website</h2>
+      <h2>7. This website</h2>
       <p>This website uses no cookies, no scripts and no analytics. It is hosted by GitHub Pages, which may log visitors' IP addresses for security. See the <a href="https://docs.github.com/en/site-policy/privacy-policies/github-general-privacy-statement">GitHub Privacy Statement</a>.</p>
 
-      <h2>11. Changes to this policy</h2>
-      <p>If we change this policy, we will publish the new version on this page with a new effective date. If a change affects what the app sends, we will also describe it in the app's update notes and ask for your permission again before the AI coach sends anything new.</p>
+      <h2>8. Changes to this policy</h2>
+      <p>If we change this policy, we will publish the new version on this page with a new effective date, and describe any change to what the app does with data in its update notes.</p>
 
-      <h2>12. Contact</h2>
+      <h2>9. Contact</h2>
       <p>Amarsanaa Jargal · <a href="mailto:amarsanaa@outlook.com">amarsanaa@outlook.com</a></p>
     </main>
 
