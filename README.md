@@ -12,6 +12,6 @@ Plain HTML and one stylesheet (`assets/style.css`, colours from the app's `Theme
 tokens). No JavaScript, no web fonts, no trackers. Links are relative, so the site works
 under the `/katsuyo-site/` base path or a custom domain.
 
-The privacy policy must match what the app and `katsuyo-api.zon.mn` actually do, the App
-Privacy answers in App Store Connect, and `PrivacyInfo.xcprivacy`. When one changes,
-update the others.
+The privacy policy must match what the app actually does (1.0 makes no network requests
+and collects no data), the App Privacy answers in App Store Connect ("Data Not Collected"),
+and `PrivacyInfo.xcprivacy`. When one changes, update the others.
